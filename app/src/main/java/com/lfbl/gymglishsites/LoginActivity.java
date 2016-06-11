@@ -27,8 +27,6 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        deleteDatabase(GymglishDbHelper.DATABASE_NAME);
-
         mRootView = findViewById(android.R.id.content);
 
         Button buttonSignIn = (Button) findViewById(R.id.buttonSignIn);
