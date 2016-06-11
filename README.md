@@ -1,6 +1,7 @@
 # GymglishSites
 > App that lists some of the Gymglish's websites
 
-# Credentials
-User: admin
-Pass: 123
+## Credentials
+<b>User:</b> admin
+
+<b>Pass:</b> 123
