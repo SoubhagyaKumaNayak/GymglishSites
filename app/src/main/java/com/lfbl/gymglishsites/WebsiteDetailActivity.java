@@ -19,6 +19,8 @@ public class WebsiteDetailActivity extends Activity {
     public static final String EXTRA_WEBSITE_URL =
             WebsiteDetailActivity.class.getSimpleName() + "extraWebsiteUrl";
 
+    private static final int MAX_LOADING_TIME_MS = 8000;
+
     private WebView mWebView;
 
     @Override
@@ -41,7 +43,7 @@ public class WebsiteDetailActivity extends Activity {
                     public void run() {
                         dismissDialog();
                     }
-                }, 5000);
+                }, MAX_LOADING_TIME_MS);
             }
 
             @Override
