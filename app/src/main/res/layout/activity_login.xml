@@ -23,7 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/view_margin"
-        android:hint="@string/prompt_username"/>
+        android:hint="@string/prompt_username"
+        android:singleLine="true"/>
 
     <EditText
         android:id="@+id/inputPassword"
@@ -31,7 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/view_margin"
         android:hint="@string/prompt_password"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:singleLine="true"/>
 
     <Button
         android:id="@+id/buttonSignIn"
