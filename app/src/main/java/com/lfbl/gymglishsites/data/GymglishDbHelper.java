@@ -17,7 +17,7 @@ import com.lfbl.gymglishsites.model.SiteModel;
 public class GymglishDbHelper extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
-    static final String DATABASE_NAME = "gymglishsites.db";
+    public static final String DATABASE_NAME = "gymglishsites.db";
 
     public GymglishDbHelper(Context c) {
         super(c, DATABASE_NAME, null, DATABASE_VERSION);
@@ -73,19 +73,19 @@ public class GymglishDbHelper extends SQLiteOpenHelper {
 
     private ContentValues[] getContentGymglishSites() {
         final SiteModel[] SITES = new SiteModel[]{
-                new SiteModel("gymglish.com", "", "Gymglish"),
-                new SiteModel("frantastique.com", "", "Frantastique"),
-                new SiteModel("vatefaireconjuguer.com", "", "VaTeFaire Conjuguer"),
-                new SiteModel("thewordofthemonth.com", "", "The Word of the Month"),
-                new SiteModel("richmorning.com", "", "Rich Morning"),
-                new SiteModel("delavignecorp.com", "", "The Delavigne Corporation"),
-                new SiteModel("comment-utiliser-son-cpf.fr", "", "Comment Utiliser son CPF"),
-                new SiteModel("anglais-conjugaison.com", "", "Anglais Conjugaison"),
-                new SiteModel("anglais-cpf.fr", "", "CPF Anglais & Gymglish"),
-                new SiteModel("twitter.com/GymGlish", "", "Gymglish Twitter"),
-                new SiteModel("plus.google.com/+Gymglisha9", "", "Gymglish Google+"),
-                new SiteModel("fb.com/gymglish", "", "Gymglish Facebook"),
-                new SiteModel("instagram.com/gymglish", "", "Gymglish Instagram")
+                new SiteModel("Gymglish", "", "gymglish.com"),
+                new SiteModel("Frantastique", "", "frantastique.com"),
+                new SiteModel("VaTeFaire Conjuguer", "", "vatefaireconjuguer.com"),
+                new SiteModel("The Word of the Month", "", "thewordofthemonth.com"),
+                new SiteModel("Rich Morning", "", "richmorning.com"),
+                new SiteModel("The Delavigne Corporation", "", "delavignecorp.com"),
+                new SiteModel("Comment Utiliser son CPF", "", "comment-utiliser-son-cpf.fr"),
+                new SiteModel("Anglais Conjugaison", "", "anglais-conjugaison.com"),
+                new SiteModel("CPF Anglais & Gymglish", "", "anglais-cpf.fr"),
+                new SiteModel("Gymglish Twitter", "", "twitter.com/GymGlish"),
+                new SiteModel("Gymglish Google+", "", "plus.google.com/+Gymglisha9"),
+                new SiteModel("Gymglish Facebook", "", "m.facebook.com/gymglish"),
+                new SiteModel("Gymglish Instagram", "", "instagram.com/gymglish")
         };
 
         ContentValues[] valuesArr = new ContentValues[SITES.length];
